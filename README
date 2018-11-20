@@ -9,6 +9,19 @@ Introduction
   The Essential Reality P5 Data Glove is a USB device that reports
 5 finger positions, and 8 X/Y/Z IR locations. 
 
+Ubuntu 18.04 Installation
+---------------------------
+
+sudo apt-get install libtool  m4 automake libusb-dev mesa-common-dev libglu1-mesa-dev freeglut3-dev
+
+cd
+git clone https://github.com/masterzion/libp5glove.git
+cd libp5glove
+./autogen.sh
+./configure 
+make
+sudo make install
+
 
 Library Features
 ----------------
@@ -22,3 +35,4 @@ What's This Kernel Patch?
   Some 2.4.x kernels' hid.o module will "eat" the P5 HID endpoint.
 Apply this patch to you kernel & rebuild the hid.o module to prevent
 this. (A similar thing happens with Watcom tablets)
+
