@@ -38,7 +38,7 @@
 #include <errno.h>
 #include "p5glove.h"
 
-#define DEBUG
+//#define DEBUG
 #ifdef DEBUG
 #define DPRINTF(fmt,args...) fprintf(stderr,"p5: " fmt , ##args )
 #else
